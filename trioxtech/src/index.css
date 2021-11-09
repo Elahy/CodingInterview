@@ -33,24 +33,64 @@ code {
   height: 600px;
   position: relative;
 }
-div[class^="quesOne_main"] > * {
+
+.value {
+  display: flex;
+  justify-content: center;
+  margin-top: 35%;
+}
+
+.black {
+  height: 150px;
+  width: 150px;
+  color: aliceblue;
+  border: none;
+  background-color: black;
+  transition: all 1s ease;
+}
+.blueberry {
+  height: 150px;
+  width: 150px;
+  color: aliceblue;
+  border: none;
+  background-color: #4f86f7;
+  transition: all 1s ease;
+}
+.police {
+  height: 150px;
+  width: 150px;
+  color: aliceblue;
+  border: none;
+  background-color: #374f6b;
+  transition: all 1s ease;
+}
+.oxford {
+  height: 150px;
+  width: 150px;
+  color: aliceblue;
+  border: none;
+  background-color: #002147;
+  transition: all 1s ease;
+}
+
+div[class^="main"] > * {
   display: inline-block;
   position: absolute;
 }
 
-div[class^="quesOne_main"] > div[class*="topleft"] {
+div[class^="main"] > div[class*="topleft"] {
   top: 0px;
   left: 0px;
 }
-div[class^="quesOne_main"] > div[class*="topright"] {
+div[class^="main"] > div[class*="topright"] {
   top: 0px;
   left: 450px;
 }
-div[class^="quesOne_main"] > div[class*="bottomleft"] {
+div[class^="main"] > div[class*="bottomleft"] {
   top: 450px;
   left: 0px;
 }
-div[class^="quesOne_main"] > div[class*="bottomright"] {
+div[class^="main"] > div[class*="bottomright"] {
   top: 450px;
   left: 450px;
 }
@@ -63,45 +103,4 @@ div[class^="quesOne_main"] > div[class*="bottomright"] {
 }
 .shuffle:hover {
   background-color: antiquewhite;
-}
-
-.black {
-  height: 150px;
-  width: 150px;
-  color: aliceblue;
-  border: none;
-  background-color: black;
-  top: 0px;
-  left: 0px;
-  transition: all 1s ease;
-}
-.blueberry {
-  height: 150px;
-  width: 150px;
-  color: aliceblue;
-  border: none;
-  background-color: #4f86f7;
-  top: 0px;
-  left: 0px;
-  transition: all 1s ease;
-}
-.police {
-  height: 150px;
-  width: 150px;
-  color: aliceblue;
-  border: none;
-  background-color: #374f6b;
-  top: 0px;
-  left: 0px;
-  transition: all 1s ease;
-}
-.oxford {
-  height: 150px;
-  width: 150px;
-  color: aliceblue;
-  border: none;
-  background-color: #002147;
-  top: 0px;
-  left: 0px;
-  transition: all 1s ease;
 }

@@ -41,7 +41,7 @@ function QuestionOne() {
       <div className="main">
         {cards.map((e, i) => (
           <div className={`${positions[i]} ` + e.color} key={i}>
-            <p>{e.value}</p>
+            <span className="value">{e.value}</span>
           </div>
         ))}
       </div>
