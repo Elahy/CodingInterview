@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 
-import styles from "./quesOne.module.css";
-
 function QuestionOne() {
-  const [cards, setCards] = useState([
+  const cards = [
     {
       color: "black",
       value: "15",
@@ -20,25 +18,34 @@ function QuestionOne() {
       color: "oxford",
       value: "30",
     },
+  ];
+  const [positions, setPositions] = useState([
+    "topleft",
+    "topright",
+    "bottomleft",
+    "bottomright",
   ]);
   const [reload, setReload] = useState(false);
   function func() {
     return 0 - Math.floor(Math.random() * 3);
   }
+
   const handleShuffle = () => {
-    setCards(cards.sort(func));
+    setPositions(positions.sort(func));
+    console.log(positions);
     reload ? setReload(false) : setReload(true);
   };
+
   return (
     <div>
-      <div className={styles.main}>
+      <div className="main">
         {cards.map((e, i) => (
-          <div className={e.color} key={i}>
+          <div className={`${positions[i]} ` + e.color} key={i}>
             <p>{e.value}</p>
           </div>
         ))}
       </div>
-      <button onClick={handleShuffle} className={styles.shuffle}>
+      <button onClick={handleShuffle} className="shuffle">
         Shuffle
       </button>
     </div>

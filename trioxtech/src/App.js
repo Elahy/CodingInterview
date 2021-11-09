@@ -15,7 +15,7 @@ function App() {
     <>
       {loading === false ? (
         <>
-          <div className="main">
+          <div className="root">
             <button onClick={() => setSelector("one")} className="button">
               Question 1
             </button>

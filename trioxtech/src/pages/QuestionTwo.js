@@ -20,6 +20,20 @@ function QuestionTwo() {
     console.log("product", product);
   };
 
+  const handleChange = (name, value, i) => {
+    // const value = event.target.value;
+    // const name = event.target.name;
+    const tempproducts = product;
+    const tempitem = product[i];
+    console.log(tempitem);
+    tempitem.name = value;
+    tempproducts[i] = tempitem;
+    setProduct(tempproducts);
+
+    // setProduct(...product, product[i] = {...product[i], product[i].name : value});
+    // console.log(product[i], value, name);
+  };
+
   return (
     <div className={styles.root}>
       <div className={styles.tableHead}>
@@ -30,9 +44,26 @@ function QuestionTwo() {
       </div>
       {product.map((e, i) => (
         <div key={i}>
-          <input className={styles.inputItem}></input>
-          <input onChange={() => {}} className={styles.inputQuantity}></input>
-          <input className={styles.inputQuantity}></input>
+          <input
+            name="item"
+            type="text"
+            onChange={(event) =>
+              handleChange(event.target.name, event.target.value, i)
+            }
+            className={styles.inputItem}
+          />
+          <input
+            name="quantity"
+            type="number"
+            onChange={(event) => handleChange(event, i)}
+            className={styles.inputQuantity}
+          />
+          <input
+            name="rate"
+            type="number"
+            onChange={(event) => handleChange(event, i)}
+            className={styles.inputQuantity}
+          />
           <span className={styles.indivisualAmount}>
             {e.rate && e.quantity ? e.rate * e.quantity : "0"}
           </span>
@@ -63,18 +94,24 @@ function QuestionTwo() {
           <div>
             <p> Subtotal </p>
           </div>
-          <label>
-            Discount
-            <input />
-          </label>
-          <label>
-            Tax
-            <input />
-          </label>
-          <label>
-            Shipping
-            <input />
-          </label>
+          <div>
+            <label>
+              Discount
+              <input />
+            </label>
+          </div>
+          <div>
+            <label>
+              Tax
+              <input />
+            </label>
+          </div>
+          <div>
+            <label>
+              Shipping
+              <input />
+            </label>
+          </div>
           <div>
             <p>Total </p>
           </div>
