@@ -1,0 +1,54 @@
+.root {
+  background-color: rgb(196, 213, 224);
+  display: flex;
+}
+.container {
+  width: 62%;
+  margin: 0 1%;
+}
+.searchbar {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color: white;
+  margin: 5px;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+
+img {
+  width: 100px;
+}
+.card {
+  width: 120px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  margin: 5px;
+}
+
+.footer {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color: rgb(196, 213, 224);
+  margin: 0;
+}
+.cart {
+  background-color: white;
+  border-radius: 5px;
+  width: 35%;
+  height: 95vh;
+}
+.customer {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  margin: 5px;
+}
