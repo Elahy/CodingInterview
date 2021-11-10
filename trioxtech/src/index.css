@@ -72,25 +72,47 @@ code {
   background-color: #002147;
   transition: all 1s ease;
 }
+/* 
+div[class="main"] > * {
+  display: inline-block;
+  position: absolute;
+} */
 
-div[class^="main"] > * {
+.main > * {
   display: inline-block;
   position: absolute;
 }
-
-div[class^="main"] > div[class*="topleft"] {
+/* 
+div[class="main"] > div[class*="topleft"] {
   top: 0px;
   left: 0px;
 }
-div[class^="main"] > div[class*="topright"] {
+div[class="main"] > div[class*="topright"] {
   top: 0px;
   left: 450px;
 }
-div[class^="main"] > div[class*="bottomleft"] {
+div[class="main"] > div[class*="bottomleft"] {
   top: 450px;
   left: 0px;
 }
-div[class^="main"] > div[class*="bottomright"] {
+div[class="main"] > div[class*="bottomright"] {
+  top: 450px;
+  left: 450px;
+} */
+
+.topleft {
+  top: 0px;
+  left: 0px;
+}
+.topright {
+  top: 0px;
+  left: 450px;
+}
+.bottomleft {
+  top: 450px;
+  left: 0px;
+}
+.bottomright {
   top: 450px;
   left: 450px;
 }
