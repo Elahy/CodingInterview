@@ -5,16 +5,16 @@ function QuestionTwo() {
   const [product, setProduct] = useState([
     {
       item: "",
-      quantity: "",
-      rate: "",
+      quantity: null,
+      rate: null,
     },
   ]);
 
   const addLine = () => {
     const newProduct = {
       item: "",
-      quantity: "",
-      rate: "",
+      quantity: null,
+      rate: null,
     };
     setProduct([...product, newProduct]);
     console.log("product", product);
@@ -23,10 +23,11 @@ function QuestionTwo() {
   const handleChange = (name, value, i) => {
     // const value = event.target.value;
     // const name = event.target.name;
-    const tempproducts = product;
+    const tempproducts = [...product];
+    console.log("tempproducts", tempproducts);
     const tempitem = product[i];
-    console.log(tempitem);
-    tempitem.name = value;
+    console.log("tempitem", tempitem);
+    tempitem[name] = value;
     tempproducts[i] = tempitem;
     setProduct(tempproducts);
 
@@ -55,13 +56,17 @@ function QuestionTwo() {
           <input
             name="quantity"
             type="number"
-            onChange={(event) => handleChange(event, i)}
+            onChange={(event) =>
+              handleChange(event.target.name, parseFloat(event.target.value), i)
+            }
             className={styles.inputQuantity}
           />
           <input
             name="rate"
             type="number"
-            onChange={(event) => handleChange(event, i)}
+            onChange={(event) =>
+              handleChange(event.target.name, parseFloat(event.target.value), i)
+            }
             className={styles.inputQuantity}
           />
           <span className={styles.indivisualAmount}>
