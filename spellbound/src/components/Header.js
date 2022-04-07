@@ -2,9 +2,12 @@ import React from "react";
 
 function Header() {
   return (
-    <div>
-      <img src="./img/tophead-img.webp" alt="headerimage" />
-    </div>
+    <div
+      style={{
+        backgroundImage: "url(/img/tophead-img.webp)",
+        height: "100vh",
+      }}
+    ></div>
   );
 }
 
