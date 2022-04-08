@@ -1,10 +1,9 @@
 import React from "react";
 import { Player } from "video-react";
 
-
 function Videos() {
   return (
-    <div>
+    <div className="bg-light-green">
       <div className="flex">
         <a href="https://roadshow.sec.gov.bd/">
           <img src="./img/final-besc-campaign-logo.webp" alt="" />
