@@ -4,16 +4,22 @@ import { Player } from "video-react";
 function Videos() {
   return (
     <div className="bg-light-green">
-      <div className="flex">
+      <div className="flex justify-center">
         <a href="https://roadshow.sec.gov.bd/">
-          <img src="./img/final-besc-campaign-logo.webp" alt="" />
+          <img
+            className="m-2 h-36"
+            src="./img/final-besc-campaign-logo.webp"
+            alt=""
+          />
         </a>
         <a href="https://roadshow.sec.gov.bd/">
-          <img src="./img/bsec-logo-2.webp" alt="" />
+          <img className="m-2 h-32" src="./img/bsec-logo-2.webp" alt="" />
         </a>
       </div>
       <div>
-        <h1>The Future of Opportunity in bangladesh</h1>
+        <h1 className="text-center text-9xl">
+          The Future of Opportunity in bangladesh
+        </h1>
       </div>
       <div>
         <Player
