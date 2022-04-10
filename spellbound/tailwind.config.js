@@ -6,12 +6,25 @@ module.exports = {
       bd: ["53px", "78px"],
     },
     fontFamily: {
-      gilroy: ["Gilroy-Bold"],
+      gilroy: ["Gilroy-Bold-Normal-6yn5P2uT"],
     },
     extend: {
       colors: {
         "bd-green": "rgb(0, 106, 78)",
         "light-green": "rgb(230, 241, 238)",
+      },
+      animmation: {
+        dim: "dim 4s infinite",
+      },
+      keyframes: {
+        dim: {
+          "0%": {
+            opacity: 1.0,
+          },
+          "100%": {
+            opacity: 0.0,
+          },
+        },
       },
     },
   },

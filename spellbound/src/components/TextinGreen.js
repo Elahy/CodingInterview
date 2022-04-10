@@ -2,8 +2,8 @@ import React from "react";
 
 function TextinGreen() {
   return (
-    <div className="h-screen bg-bd-green">
-      <div className="text-bd font-gilroy px-96 py-20 text-white">
+    <div className="h-100vh bg-bd-green">
+      <div className="text-bd font-gilroy font-semibold mx-20 px-96 py-40 text-white">
         Bangladesh has come a long way in its first 50 years. Impressive
         economic growth, business-friendly reforms and financial-market
         innovation set the stage for incredible investment opportunities. As
