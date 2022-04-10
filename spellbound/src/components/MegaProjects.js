@@ -1,4 +1,5 @@
 import React from "react";
+import ReactPlayer from "react-player";
 
 function MegaProjects() {
   return (
@@ -16,6 +17,14 @@ function MegaProjects() {
           transport, shipping, communication and energy, the stage is set for a
           bright future.
         </p>
+      </div>
+      <div className="flex justify-center">
+        <ReactPlayer
+          url="./vid/file-240k-1.mp4"
+          width="924px"
+          height="517px"
+          controls={true}
+        />
       </div>
       <div>
         <p>

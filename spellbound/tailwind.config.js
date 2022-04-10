@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         "bd-green": "rgb(0, 106, 78)",
         "light-green": "rgb(230, 241, 238)",
+        "black-rgba": "rgba(0, 0, 0, 0.7)",
       },
       animmation: {
         dim: "dim 4s infinite",
