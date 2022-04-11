@@ -43,16 +43,16 @@ function Page() {
       <Powering />
       <Goals />
       <TechSector />
-      <YoungPopulations />
+      {/* <YoungPopulations />
       <Ecommerce />
       <Startups />
-      <Fintech />
+      <Fintech /> */}
       <Emerging />
       <GreenBonds />
-      <Sustainable />
-      <ImprovingRegulations />
+      {/* <Sustainable /> */}
+      {/* <ImprovingRegulations />
       <SolarPower />
-      <StockMarkets />
+      <StockMarkets /> */}
       <Ending />
       <Footer />
     </>
