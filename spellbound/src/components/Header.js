@@ -8,7 +8,7 @@ function Header() {
         <div className="h-full">
           <div className="bg-bd-green h-20 w-full"></div>
           <div className="">
-            <p className="text-9xl px-40 pt-16  font-extrabold bg-white mix-blend-screen">
+            <p className="text-10xl pl-36 pr-44 pt-24  font-bold bg-white mix-blend-screen">
               THE RISE OF BENGAL TIGER
             </p>
           </div>
